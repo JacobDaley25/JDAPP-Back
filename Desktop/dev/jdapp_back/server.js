@@ -8,6 +8,7 @@ const bodyParser = require('body-parser')
 const multer = require('multer')
 const uuidv4 = require('uuid/v4')
 const dotenv = require('dotenv')
+require('dotenv').config()
 const corsOptions = require('./config/corsOptions.js')
 const db = mongoose.connection
 const PORT = process.env.PORT || 3001
